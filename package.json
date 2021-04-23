@@ -1,0 +1,27 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "description": "Los requerimientos para este proyecto son \r Mostrar una pantalla de bienvenida, pida tu nombre para comenzar a jugar.\r Mostrar un mensaje de Hola [tu nombre] y dos botones para comenzar a jugar.\r Jugar con preguntas de tipo A (Por ejemplo: sobre comida)\r Jugar con preguntas de tipo B (Por ejemplo: sobre cervezas)\r Lanzar la pregunta 1 con alternativas, el usuario responde, luego se muestra\r la pregunta 2 y luego la 3.\r Mostrar una pantalla de resultados (respuestas correctas) y dos botones de\r volver a jugar:\r Jugar con preguntas de tipo A (Por ejemplo: sobre comida)\r Jugar con preguntas de tipo B (Por ejemplo: sobre cervezas)",
+  "main": "index.js",
+  "scripts": {      
+    "htmlhint": "htmlhint dist/*.html ",
+    "eslint": "eslint --ext .js src/ test/",
+    "stylelint": "stylelint --aei src/**/*.css",
+    "pretest": "npm run htmlhint && npm run eslint && npm run stylelint",
+    "test": "jest --coverage",
+    "start": "serve src/",
+    "deploy": "gh-pages -d src"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelicaT319/Trivia.git"
+  },
+  "author": "Angelica Theran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngelicaT319/Trivia/issues"
+  },
+  "homepage": "https://github.com/AngelicaT319/Trivia#readme"
+}
+
